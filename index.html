@@ -23,27 +23,41 @@
 <body class="body_p vh-100">
 	<div class="contenedor">
 		<header> 
-			<!--second nav--><nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-				<div class="container-fluid">
-					<img src="./media/img/logo2.webp" alt="Avatar Logo" style="width:60px;" class="rounded-pill"> 
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="collapsibleNavbar">
-						<ul class="navbar-nav">
-							<li class="nav-item">
-								<a class="nav-link" href="app/">Inicia sesión</a>
+			<nav class="navbar navbar-expand-lg fixed-top nav1">
+			<div class="container">
+				<a class="navbar-brand text-white" href="#">WIMD</a>
+				<!-- btn toggler-->
+				<button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- sidebar-->
+				<div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+					<!--Sidebar header -->
+					<div class="offcanvas-header text-white border-bottom">
+						<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+						<button type="button" class="btn-close btn-close-white shadow-none border-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<!--Sidebar body-->
+					<div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+						<ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+							<li class="nav-item mx-2">
+								<a class="nav-link active text-white" aria-current="page" href="#section1">Acerca de nosotros</a>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="app/reg_usuario">Registrate</a>
+							<li class="nav-item mx-2">
+								<a class="nav-link text-white" href="#">Terminos y condiciones</a>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="app/tyc.html">Términos y condiciones</a>
-							</li>
+							<div class="btn-group mx-2">
+								<button type="button" class="btn btn-outline-light rounded-pill">Registrate</button>
+							</div>
+
+							<div class="btn-group mx-2 btn1">
+								<button type="button" class="btn rounded-pill">Inicia sesión</button>
+							</div>
 						</ul>
 					</div>
 				</div>
-			</nav>
+			</div>
+		</nav>
 		</header>
 
 		<main>
