@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WIMD</title>
+	<meta name="theme-color" content="#AED6F1">
+	<meta name="MobileOptimized" content="width">
+	<!-- Tags SEO /desing -->
+	<meta name="author" content="luz y sus lucecitas">
+	<meta name="description" content="Aplicativo web WIMD">
+	<meta name="keywords" content="WIMD, citas, eps, medicina, horarios, hospital, Citas, Medicina, Wimd, medicamentos">
+	<!--favicon-->
+	<link rel="icon" type="image/x-icon" href="./media/img/logo2.webp">
+	<!--Links-->
+	<link media rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css">
+	<link media rel="stylesheet" href="https:/cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<link media rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link rel="stylesheet" type="text/css" href="http://localhost/wimd_dl/estilos.css">
+	<script async type="text/javascript" src="./assets/js/bootstrap.bundle.js"></script>
+</head>
+
+<body class="body_p vh-100">
+	<div class="contenedor">
+		<header> 
+			<!--second nav--><nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+				<div class="container-fluid">
+					<img src="./media/img/logo2.webp" alt="Avatar Logo" style="width:60px;" class="rounded-pill"> 
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="collapsibleNavbar">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="app/">Inicia sesión</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="app/reg_usuario">Registrate</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="app/tyc.html">Términos y condiciones</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<!-- cita -->
+			<div class="mt-4 text-white expand-md">
+				<figure class="animate__animated animate__fadeInLeft" style="animation-duration: 1.8s;">
+					<blockquote class="blockquote">
+						<h1><p>¡Aquí estamos! para hacer más sencillos tus trámites medicos.</p></h1>
+					</blockquote>
+					<figcaption class="blockquote-footer" style="color:ivory;">
+						<cite>Desarrolladores de WIMD </cite>
+					</figcaption>
+				</figure>
+			</div>
+
+
+			<div class="flex text-white animate__animated animate__fadeInLeft expand-lg">
+				<div class="d-grid gap-3 col-7 mx-auto">
+
+					<button class="btn-light" type="button" aria-label="Mision" data-bs-toggle="modal" data-bs-target="#myModal1">Misión<i class="bi bi-arrow-right-circle"></i></button>
+
+					<button class="btn-light" type="button" aria-label="Vision" data-bs-toggle="modal" data-bs-target="#myModal2">Tutorial<i class="bi bi-arrow-right-circle" style=""></i></button>
+				</div>
+			</div>
+			<!-- modal 1-->
+			<div class="modal" id="myModal1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+
+						<div class="modal-header">
+							<h4 class="modal-title">Misión</h4>
+							<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+						</div>
+
+						<div class="modal-body">
+							Organizar la información de los usuarios de EPS y hacerla más accesible. Mientras en WIMD trabajamos para lograr este objetivo, nos enfocamos en la seguridad de los datos y sobre todo en la comodidad de la búsqueda de los mismos.
+						</div>
+						<div class="modal-footer">
+							<strong class="text-success">¡Esperamos disfrutes de WIMD!</strong>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- modal 2-->
+			<div class="modal" id="myModal2">
+				<div class="modal-dialog">
+					<div class="modal-content">
+
+						<div class="modal-header">
+							<h4 class="modal-title">Tutorial</h4>
+							<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+						</div>
+
+						<div class="modal-body">
+							Modal body..
+						</div>
+						<div class="modal-footer">
+							<strong class="text-success">¡Esperamos disfrutes de WIMD!</strong>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<div class="footer-dark expand-md">
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 col-md-3 item-1">
+							<h3>Servicios</h3>
+							<ul>
+								<li><a href="#">Citas</a></li>
+								<li><a href="#">Medicamentos</a></li>
+								<li><a href="#">Historial clinico</a></li>
+							</ul>
+						</div>
+						<div class="col-sm-6 col-md-3 item-2">
+							<h3>Acerca de</h3>
+							<ul>
+								<li><a href="#">WIMD</a></li>
+								<li><a href="#">Desarrolladores</a></li>
+								<li><a href="#">Preguntas frecuentes</a></li>
+							</ul>
+						</div>
+						<div class="col-md-6 item-3">
+							<h3>WIMD</h3>
+							<p>En WIMD trabajamos para organizar la información de los usuarios de EPS y hacerla más accesible, nos enfocamos en la seguridad de los datos y sobre todo en la comodidad de la búsqueda de los mismos...
+							WIMD © 2023</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+</body>
+</html>

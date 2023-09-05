@@ -1,0 +1,39 @@
+#Activar motor de escritura de url 
+RewriteEngine on
+
+#Evitar litas los archivos  de la carpeta
+Options All -Indexes
+
+#Ocultar las extensiones de los archivos php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [NC]
+
+#Ocultar las extensiones de los archivos html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [NC]
+
+<IfModule mod_deflate.c>
+ 
+# Indicamos que tipos MIME vamos a comprimir
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/x-javascript
+AddOutputFilterByType DEFLATE text/javascript
+AddOutputFilterByType DEFLATE text/css
+ 
+# Indicamos nivel de compresión (El mas alto 9 - El mas bajo 1)
+DeflateCompressionLevel 9
+
+</IfModule>
+ 
+
+FileETag None
+Header unset ETag
+Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+Header set Pragma "no-cache"
+Header set Expires "Wed, 21 Oct 2015 01:00:00 GMT"
