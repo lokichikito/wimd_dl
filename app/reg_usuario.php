@@ -21,7 +21,7 @@
 	<script type="text/javascript" src="http://localhost/wimd_dl/assets/js/bootstrap.bundle.js"></script>
 </head>
 <body class="body_m">
-	
+	<div class="contenedor">
 	<?php 
 		require_once 'conn.php'; #se reciben los datos del formulario
 		$msg=null;
@@ -122,6 +122,6 @@
 			</div>
 		</div>
 		
-	</main>
-	<h1> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod est ipsa eaque consequuntur laudantium corporis veritatis minima laboriosam vero illo. Nisi rerum, placeat repellendus ducimus doloremque deleniti aliquid incidunt magni?</h1>
+    	</main>
+	</div>
 </body>

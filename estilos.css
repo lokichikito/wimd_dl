@@ -16,13 +16,17 @@
 
 }
 .navbar{
+	width: 70%;
 	text-decoration:none;
 	background-image:linear-gradient(white, white);
-	background-position:0% 100%;	
+	background-position:0% 50%;	
 	background-size:0% 2px;
 	transition:background-size .3s;
 	position: relative;
 	height: 80px;
+}
+.main{
+	width:70% ;
 }
 .mt-4{
 	position: relative;
